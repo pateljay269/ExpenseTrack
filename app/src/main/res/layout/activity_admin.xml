@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spnUsers"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:minHeight="@dimen/demo_button_min_height"
+        android:minWidth="@dimen/demo_button_min_width"
+        android:text="Find"
+        android:textColor="@android:color/white"
+        android:background="@color/turquoise" />
+
+    <LinearLayout
+        android:id="@+id/linearUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUser"
+            android:layout_margin="5dp"
+            android:inputType="textCapWords"
+            android:hint="Enter UserName"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="UserName" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPin"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="Enter PinCode"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="PinCode" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPass"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:hint="Enter Password"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Password" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAcNo"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:hint="Enter Ac No"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Ac No" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:background="@color/turquoise" />
+
+    </LinearLayout>
+
+</LinearLayout>

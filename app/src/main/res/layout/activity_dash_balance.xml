@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DashBoard.BalanceDashActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TableLayout>
+
+        <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Current"
+                    android:textColor="@color/current" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Expense"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Income"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Total"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow
+            android:layout_margin="5sp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnInOut"
+                    android:layout_width="180sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/inout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Recharge"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnTotal"
+                    android:layout_width="180sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/inout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCalender"
+                    android:layout_width="180sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCust"
+                    android:layout_width="180sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cust" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Customers"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnFind"
+                    android:layout_width="180sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/find" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Find"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnPie"
+                    android:layout_width="180sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chart" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Chart Detail"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

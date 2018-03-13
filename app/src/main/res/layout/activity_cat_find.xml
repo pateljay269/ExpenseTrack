@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="patel.jay.expensetrack.ExpenseManager.Find.ExCatFindActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearFind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etFind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Description"
+            android:layout_weight="1"
+            android:inputType="textCapWords"
+            app:met_floatingLabel="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spnAccFind"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spnCatFind"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sbtnCaType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Date "
+                android:textColor="@color/black"
+                android:paddingStart="5dp"
+                android:paddingEnd="1dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sbtnOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:text="Total"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/floating_rv_layout"/>
+
+</LinearLayout>
