@@ -1,15 +1,32 @@
 <resources>
-    <string name="app_name">Expense Track</string>
+    <string name="app_name">Expense Manager</string>
     <string name="search">Amount , Description </string>
     <string name="cat_lable">Category Name</string>
-    <string name="forgot_pass"><u>Forgot Pass</u></string>
+
     <string-array name="asd">
         <item>A</item>
-        <item>B</item>
     </string-array>
 
-    <string name="tab">\u0009\u0009\u0009\u0009\u0009</string>
-    <string name="alert_dialog_title">Please Select</string>
-    <string name="positive_button_text">Select</string>
-    <string name="negative_button_text">Cancel</string>
+    <string name="rs">₹</string>
+    <string name="info">Info</string>
+    <string name="export_all">Export All</string>
+    <string name="import_database">Import Database</string>
+    <string name="dsc">Description</string>
+    <string name="total">Total</string>
+    <string name="expense">Expense</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="find">Find</string>
+    <string name="current">Current</string>
+    <string name="amount">Amount</string>
+    <string name="cancel">Cancel</string>
+    <string name="export_account">Export Account</string>
+    <string name="reports">Reports</string>
+    <string name="export_current_year">Export Current Year</string>
+    <string name="export_db">Export Db</string>
+    <string name="transactions">Transactions</string>
+    <string name="details">Details</string>
+    <string name="accounts">Accounts</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="approx_forecast">Approx Forecast Of Past Data</string>
 </resources>

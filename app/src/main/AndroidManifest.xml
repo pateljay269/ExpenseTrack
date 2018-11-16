@@ -1,169 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="patel.jay.expensetrack">
+    package="patel.jay.exmanager">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@drawable/homeicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/homeicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ExpenseManager.Login.LoginActivity"
+            android:name=".Expense.DashBoardActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".DashBoard.HomeDashActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:taskAffinity="patel.jay.expensetrack.DashBoard.HomeDashActivity"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator">
             <intent-filter>
-                <action android:name=".DashBoard.HomeDashActivity" />
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".DashBoard.AddFromHomeActivity"
-            android:configChanges="orientation"
-            android:icon="@drawable/allorder"
-            android:label="Add InOut"
-            android:screenOrientation="portrait"
-            android:taskAffinity="patel.jay.expensetrack.DashBoard.AddFromHomeActivity"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <!--
-        <intent-filter>
-                <action android:name=".DashBoard.AddFromHomeActivity"/>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        -->
-        <activity
-            android:name=".DashBoard.ExpenseDashActivity"
+            android:name=".Expense.Category.CategoryActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".DashBoard.BalanceDashActivity"
+            android:name=".Expense.Transaction.TransActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".DashBoard.RechargeDashActivity"
+            android:name=".Expense.Find.DateFindActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".ExpenseManager.Category.CategoryActivity"
+            android:name=".Expense.Find.CatFindActivity"
             android:configChanges="orientation"
             android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".ExpenseManager.AllTransaction.ExTransactionActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".ExpenseManager.Find.ExDateFindActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".ExpenseManager.Find.ExCatFindActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".ExpenseManager.Login.AdminActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".ExpenseManager.Login.HomeActivity"
-            android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".Calender.CalenderActivity"
             android:configChanges="orientation"
-            android:noHistory="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".RechargeManager.Customer.CustomersActivity"
+            android:name=".Expense.Find.MonFindActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".RechargeManager.Transactions.BalTransactionActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".RechargeManager.FindTotal.TotalActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".RechargeManager.FindTotal.BalCustFindActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".RechargeManager.FindTotal.BalDateFindActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".RechargeManager.Recharge.RechargeActivity"
-            android:configChanges="orientation"
-            android:noHistory="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity android:name=".RechargeManager.FindTotal.PieChartActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
+
     </application>
 
 </manifest>

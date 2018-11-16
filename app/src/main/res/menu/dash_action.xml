@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <item
-        android:id="@+id/action_logout"
-        android:title="Logout"
-        android:icon="@drawable/logout"
-        app:showAsAction="always" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
 
     <item
         android:id="@+id/action_info"
-        android:title="Info"
         android:icon="@drawable/info"
+        android:title="@string/info"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_repo"
+        android:icon="@drawable/report"
+        android:title="@string/reports"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_import"
+        android:title="@string/import_database"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_exYear"
-        android:title="Export Year"
-        android:icon="@drawable/total"
+        android:id="@+id/action_acc_export"
+        android:checkable="true"
+        android:title="@string/export_account"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_exAll"
-        android:title="Export All"
-        android:icon="@drawable/total"
+        android:title="@string/export_all"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_exDb"
-        android:title="Export Database"
-        android:icon="@drawable/total"
+        android:id="@+id/action_current"
+        android:title="@string/export_current_year"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_import"
-        android:title="Import"
-        android:icon="@drawable/total"
+        android:id="@+id/action_db"
+        android:title="@string/export_db"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/action_exCur"
-        android:title="Export Current Year"
-        android:icon="@drawable/total"
-        app:showAsAction="never" />
+
 </menu>

@@ -2,24 +2,50 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etFind"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etFind"
         android:gravity="center"
-        android:inputType="textCapWords"
         android:hint="@string/search"
+        android:inputType="textCapWords"
         android:visibility="gone"
         app:met_floatingLabel="highlight"
         app:met_floatingLabelText="@string/search" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/actFind"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:contentDescription="@string/cancel"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
